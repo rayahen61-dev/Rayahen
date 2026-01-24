@@ -1,0 +1,2776 @@
+<!doctype html>
+<html class="h-full" lang="ar" dir="rtl">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> رياحين - أجود أنواع التمور والمكسرات</title>
+  <link rel="icon" href="logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+
+   head {
+
+.quick-nav-btn {
+  width: 260px;
+}
+   }
+  
+  
+   body {
+      box-sizing: border-box;
+    }
+    
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
+    
+    * {
+      font-family: 'Cairo', sans-serif;
+    }
+    
+    :root {
+      --gold: #bd7613;
+      --dark-gold: #7a5116;
+      --light-gold: #a8872df1;
+      --text-dark: #8f5708;
+      --text-gray: #311b02;
+    }
+    
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+  .quick-nav-btn {
+    background: linear-gradient(to right, #d4af37, #b8962e);
+    color: white;
+  }
+
+  .quick-nav-btn:hover {
+    background: linear-gradient(to right, #b8962e, #9c7c19);
+    transform: scale(1.05);
+  }
+
+    .gradient-gold {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--dark-gold) 100%);
+    }
+    
+    .text-gold {
+      color: var(--gold);
+    }
+    
+    .product-card {
+      transition: all 0.3s ease;
+      border: 2px solid var(--light-gold);
+    }
+    
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(212, 175, 55, 0.3);
+    }
+    
+    .quantity-input {
+      -moz-appearance: textfield;
+    }
+    
+    .quantity-input::-webkit-outer-spin-button,
+    .quantity-input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    
+    .modal-slide-in {
+      animation: slideIn 0.3s ease-out;
+    }
+    
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    
+    .social-icon {
+      transition: all 0.3s ease;
+    }
+    
+    .social-icon:hover {
+      transform: scale(1.1) rotate(5deg);
+    }
+    
+    .quick-nav-btn {
+      scroll-behavior: smooth;
+    }
+/*زر ارسال الطلب المثبت اسفل الشاشه*/
+    .whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+.top-btn{
+  position: fixed;
+  bottom: 90px;   /* فوق زر الواتساب */
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: #6f4e37;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+.update{
+  color:#c62828;
+  font-weight:bold;
+}
+
+.call-btn{
+  display:block;
+  width:200px;
+  margin:10px auto;
+  background:#3e2723;
+  color:#fff;
+  padding:10px;
+  border-radius:25px;
+  text-align:center;
+  font-weight:bold;
+}
+
+body {
+  user-select: none;
+}
+
+
+
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+<!--تثبيت الهيدر-->
+ <header class="navbar">
+<div class="logo-area">
+</div>
+
+  <!--زر ارسال الطلب المثبت اسفل الشاشه-->
+    <a href="https://wa.me/201207772789?text=السلام%20عليكم%20عايز%20اطلب" 
+   class="whatsapp-btn" target="_blank">
+  💬 اطلب على واتساب
+  </a>
+
+<button onclick="scrollToTop()" class="top-btn">⬆</button>
+
+<script>
+  if(!localStorage.getItem("visited")){
+    alert("أهلاً بيك في محمصة الرياحين 🌰");
+    localStorage.setItem("visited", "yes");
+  }
+  
+</script>
+
+<script>
+const now = new Date();
+const h = now.getHours();
+const m = now.getMinutes();
+const time = h * 60 + m;
+
+const open = 8 * 60;        // 8 صباحاً
+const close = 25 * 60 + 30; // 1:30 بعد منتصف الليل
+
+let status =
+  (time >= open && time <= 24 * 60) ||
+  (time >= 0 && time <= 90);
+
+document.write(status ? "🟢 المحل مفتوح" : "🔴 المحل مغلق");
+</script>
+
+<script>
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+</script>
+
+
+ <body class="h-full bg-gray-50"><!-- Header -->
+    <header class="gradient-gold text-white shadow-lg sticky top-0 z-40">
+   <div class="max-w-7xl mx-auto px-4 py-4">
+    <div class="flex justify-between items-center">
+     <div class="text-center md:text-right">
+          <img src="logo.png" alt=" " >   
+          <h1 class="text-2xl md:text-3xl font-black" id="site-title"> rayahen roastery </h1>
+     </div><button id="cart-btn" class="relative bg-white px-4 py-3 rounded-full hover:scale-110 transition transform shadow-lg" style="color: var(--gold);"> <span class="text-2xl">🛒</span> <span id="cart-count" class="absolute -top-2 -right-2 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">0</span> </button>
+    </div>
+   </div>
+  </header><!-- Hero Section -->
+  <section class="gradient-gold text-white py-20 text-center">
+   <div class="max-w-4xl mx-auto px-4">
+    <div class="text-7xl mb-6 animate-bounce">
+     🌙
+    </div>
+    <h2 class="text-4xl md:text-6xl font-black mb-4" id="hero-title">تمور ومكسرات رمضان الفاخرة</h2>
+    <p class="text-lg md:text-xl mb-8 opacity-90" id="hero-subtitle">اكتشف أجود أنواع التمور والمكسرات المختارة بعناية لتزيين سفرة رمضان</p>
+   </div>
+  </section><!-- Quick Navigation Section -->
+  <section class="py-8 bg-white">
+   <div class="max-w-7xl mx-auto px-4">
+
+
+    <div class="flex flex-wrap justify-center gap-4">
+
+  <a href="#dates-section"
+     class="bg-[#b17c33] text-white
+            px-8 py-4 rounded-full font-extrabold text-lg
+            border-2 border-[#8f6226]
+            shadow-[0_6px_0_#7a531f]
+            transition-all duration-200
+            hover:-translate-y-1 hover:shadow-[0_10px_0_#7a531f]
+            active:translate-y-1 active:shadow-[0_2px_0_#7a531f]
+            flex items-center gap-2 select-none">
+    🌴 التمور الفاخرة
+  </a>
+
+  <a href="#nuts-section"
+     class="bg-[#b17c33] text-white
+            px-8 py-4 rounded-full font-extrabold text-lg
+            border-2 border-[#8f6226]
+            shadow-[0_6px_0_#7a531f]
+            transition-all duration-200
+            hover:-translate-y-1 hover:shadow-[0_10px_0_#7a531f]
+            active:translate-y-1 active:shadow-[0_2px_0_#7a531f]
+            flex items-center gap-2 select-none">
+    🥜 مكسرات محمصة
+  </a>
+
+  <a href="#Raw-section"
+     class="bg-[#b17c33] text-white
+            px-8 py-4 rounded-full font-extrabold text-lg
+            border-2 border-[#8f6226]
+            shadow-[0_6px_0_#7a531f]
+            transition-all duration-200
+            hover:-translate-y-1 hover:shadow-[0_10px_0_#7a531f]
+            active:translate-y-1 active:shadow-[0_2px_0_#7a531f]
+            flex items-center gap-2 select-none">
+    🥜 مكسرات نيه
+  </a>
+
+  <a href="#yamish-section"
+     class="bg-[#b17c33] text-white
+            px-8 py-4 rounded-full font-extrabold text-lg
+            border-2 border-[#8f6226]
+            shadow-[0_6px_0_#7a531f]
+            transition-all duration-200
+            hover:-translate-y-1 hover:shadow-[0_10px_0_#7a531f]
+            active:translate-y-1 active:shadow-[0_2px_0_#7a531f]
+            flex items-center gap-2 select-none">
+    🍬 الياميش
+  </a>
+
+</div>
+
+      </div>
+   </div>
+  </section><!-- Products Section -->
+  <main class="py-16 px-4">
+    <!-- Category 1: Dates -->
+   <section class="max-w-7xl mx-auto mb-20" id="dates-section">
+    <h3 class="text-3xl md:text-4xl font-black text-center mb-12" style="color: var(--text-dark);" id="category-1-title">🌴 التمور الفاخرة</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Date Product 1 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+<img src="images (9).jpg" alt="">
+
+      </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">تمر عجوة المدينة</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">تمر عجوة المدينة  فاخر</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 630 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية  (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="تمر عجوة المدينة" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="تمر عجوة المدينة" data-price="630"> إضافة للسلة 🛒 </button>
+     </div><!-- Date Product 2 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+            <img src="images (1).jpg" alt=" " >
+        </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">تمر مجدول</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">تمر مجدول اردني الفاخر</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 450 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="تمر مجدول" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="تمر مجدول" data-price="450"> إضافة للسلة 🛒 </button>
+      </div><!-- Date Product 3 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+            <img src="images (34).jpg" alt=" " >
+        </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">تمر مجدول إكسترا</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">تمر مجدول إكسترا فاخر</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 550 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="تمر مجدول إكسترا" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="تمر مجدول إكسترا" data-price="550"> إضافة للسلة 🛒 </button>
+                 </div><!-- Date Product 4 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+            <img src="images (33).jpg" alt=" " >
+        </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">تمر مجدول جامبو</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">تمر مجدول جامبو فاخر</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 590 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="تمر مجدول جامبو" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="تمر مجدول جامبو" data-price="590"> إضافة للسلة 🛒 </button>
+
+          </div><!-- Date Product 5 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+            <img src="images (30).jpg" alt=" " >
+        </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">تمر صفاوي</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">تمر صفاوي فاخر</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 420 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="تمر صفاوي" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="تمر صفاوي" data-price="420"> إضافة للسلة 🛒 </button>
+              </div><!-- Date Product 6 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+            <img src="images (32).jpg" alt=" " >
+        </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">تمر سري</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">تمر سري فاخر</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 180 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="تمر سري" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="تمر سري" data-price="180"> إضافة للسلة 🛒 </button>
+
+             </div><!-- Date Product 7  -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+            <img src="images (35).png" alt=" " >
+        </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">تمر خضري مبروم</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">تمر خضري مبروم فاخر</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 350 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="تمر خضري مبروم" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="تمر خضري مبروم" data-price="350"> إضافة للسلة 🛒 </button>
+
+                   </div><!-- Date Product 8  -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+            <img src="images (31).jpg" alt=" " >
+        </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">تمر  صقعي</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">تمر صقعي  فاخر</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 350 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="تمر  صقعي" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="تمر  صقعي" data-price="350"> إضافة للسلة 🛒 </button>
+                  </div><!-- Date Product 9  -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+            <img src="images (36).jpg" alt=" " >
+        </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">تمر  روتانا</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">تمر روتانا  فاخر</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 170 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="تمر  روتانا" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="تمر  روتانا" data-price="170"> إضافة للسلة 🛒 </button>
+
+               </div><!-- Date Product 10  -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+            <img src="images (37).jpg" alt=" " >
+        </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">تمر  خضري</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">تمر خضري  فاخر</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 200 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="تمر  خضري" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="تمر  خضري" data-price="200"> إضافة للسلة 🛒 </button>
+
+           </div><!-- Date Product 2 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+            <img src="images (54).jpg" alt=" " >
+        </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">تمر نبته علي</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">تمر نبته علي فاخر</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 170 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="تمر نبته علي" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="تمر نبته علي" data-price="170"> إضافة للسلة 🛒 </button>
+      </div><!-- Date Product 11 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+      <img src="images (5).jpg" alt=" " >
+      </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">تمر سكري مفتل</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">تمر سكري مفتل القصيم ممتاز</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 250 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="تمر سكري" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="تمر سكري" data-price="250"> إضافة للسلة 🛒 </button>
+      </div>
+    </div>
+   </section><!-- Category 2: Nuts -->
+   <section class="max-w-7xl mx-auto mb-20" id="nuts-section">
+    <h3 class="text-3xl md:text-4xl font-black text-center mb-12" style="color: var(--text-dark);" id="category-2-title">🥜  مكسرات محمصه</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Nut Product 1 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+         
+        <img src="images (22).png" alt=" " >
+      </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">فستق محمص </h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">فستق  محمص ملح خفيف</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 1100 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="فستق محمص" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="فستق محمص" data-price="1100"> إضافة للسلة 🛒 </button>
+ 
+      
+      <!-- nut Product 2 --> </div>
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img src="images (24).jpg" 
+      alt="فستق حلبي مالح" 
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+    فستق حلبي مالح
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+فستق حلبي مالح  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 1100 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="فستق حلبي مالح"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="فستق حلبي مالح"
+    data-price="1100"
+  >
+    إضافة للسلة 🛒
+  </button>
+</div>
+
+<!-- Nut Product3: Pecan -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (17).jpg"
+      alt="بيكان محمص"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+    بيكان محمص
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+    بيكان محمص فاخر عالي الجودة
+  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 1750 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="بيكان محمص"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="بيكان محمص"
+    data-price="1750"
+  >
+    إضافة للسلة 🛒
+  </button>
+</div>
+
+
+<!-- Nut Product4: Pecan -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (28).jpg"
+      alt=" كاجو محمص"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+     كاجو محمص
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+        كاجو مملح محمص
+  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 980 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product=" كاجو محمص"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product=" كاجو محمص"
+    data-price="980"
+  >
+    إضافة للسلة 🛒
+  </button>
+</div>
+
+
+<!-- Nut Product 5 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (16).jpg"
+      alt=" لوز محمص"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+    لوز محمص 
+  </h4>
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+     لوز ملح خفيف  
+  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 900 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product=" لوز محمص"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product=" لوز محمص"
+    data-price="900"
+  >
+    إضافة للسلة 🛒
+  </button>
+</div>
+     
+
+<!-- Nut Product 6 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (25).jpg"
+      alt=" لوز مالح"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+    لوز مالح 
+  </h4>
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+     لوز مملح   
+  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 900 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product=" لوز مالح"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product=" لوز مالح"
+    data-price="900"
+  >
+    إضافة للسلة 🛒
+  </button>
+</div>
+<!-- زر في الأعلى -->
+     <class="quick-nav-btn bg-gradient-to-r from-yellow-600 to-yellow-700 text-white px-6 py-3 rounded-full font-bold text-lg shadow-lg transition transform hover:scale-105 hover:shadow-xl flex items-center gap-2">
+  </a>
+</div>
+
+<!-- قسم المكسرات النيّة -->
+<section id="Raw-section" class="max-w-7xl mx-auto mb-20">
+  <h3 class="text-3xl md:text-4xl font-black text-center mb-12" style="color: var(--text-dark);">
+  </div>
+</section>
+
+
+    </section><!-- Category 3: Raw-->
+   <section class="max-w-7xl mx-auto mb-20" id="nuts-section">
+    <h3 class="text-3xl md:text-4xl font-black text-center mb-12" style="color: var(--text-dark);" id="category-2-title">🥜  مكسرات نيه</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Nut Product 1 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+          <img src="images (20).jpg" alt=" " >
+      </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">فستق قلوبات ني</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">فستق قلوبات ني     </p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 1800 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="فستق قلوبات ني" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="فستق قلوبات ني" data-price="1800"> إضافة للسلة 🛒 </button>
+     </div><!-- Nut Product 2 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+          <img src="images (18).jpg" alt=" " >
+      </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">كاجو ني </h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">كاجو  ني ممتاز</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 760 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="كاجو ني" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="كاجو ني" data-price="760"> إضافة للسلة 🛒 </button>
+     </div><!-- Nut Product 3 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+         <img src="images (26).jpg" alt=" " >
+      </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">لوز ني </h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">لوز ني  </p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 830 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="لوز ني" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="لوز ني" data-price="830"> إضافة للسلة 🛒 </button>
+     </div>
+
+          <!-- Nut Product4: لوز  صنوبري -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (51).jpg" > <!-- ضع هنا رابط صورة اللوز -->
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+    لوز صنوبري
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+    لوز صنوبري
+  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 980 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="لوز صنوبري"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="لوز صنوبري"
+    data-price="980"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+     <!-- Nut Product4: لوز مقشور أنصاف -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (19).jpg" > <!-- ضع هنا رابط صورة اللوز -->
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+    لوز مقشور أنصاف
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+    لوز مقشور أنصاف
+  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 920 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="لوز مقشور أنصاف"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="لوز مقشور أنصاف"
+    data-price="920"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+
+     <!-- Nut Product5: سوداني ني-->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (23).png" <!-- ضع هنا رابط صورة سوداني -->
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+   سوداني ني
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+سوداني ني  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 200 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="  سوداني ني"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="  سوداني ني"
+    data-price="200"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+  
+
+     <!-- Nut Product6:  عين جمل ني-->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (27).jpg" <!-- ضع هنا رابط صورة اللوز -->
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+عين جمل ني  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+عين جمل ني </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 800 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="   عين جمل ني"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="   عين جمل ني"
+    data-price="800"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+     <!-- Nut Product7:   بيكان ني-->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (53).jpg" <!-- ضع هنا رابط صورة اللوز -->
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+  بيكان ني  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+بيكان  ني </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 1750 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="   بيكان  ني"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="   بيكان  ني"
+    data-price="1750"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+     <!-- Nut Product5: خلطة رياحين الصحية-->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (58).png" <!-- ضع هنا رابط صورة خلطة رياحين الصحية -->
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+   خلطة رياحين الصحية 
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+مكسرات نية وفواكه مجففه  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 700 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="  خلطة رياحين الصحية "
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="   خلطة رياحين الصحية"
+    data-price="700"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+    </section><!-- Category 4: Yamish -->
+   <section class="max-w-7xl mx-auto mb-20" id="yamish-section">
+    <h3 class="text-3xl md:text-4xl font-black text-center mb-12" style="color: var(--text-dark);" id="category-3-title">🍬 الياميش </h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Yamish Product 1 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+          <img src="images.jpg" alt=" " >
+      </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">مشمش تركي </h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">مشمش تركي فاخر </p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 990 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="مشمش تركي" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="مشمش تركي" data-price="990"> إضافة للسلة 🛒 </button>
+    
+           </div><!-- Yamish Product 22 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+          <img src="images (44).jpg" alt=" " >
+      </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">مشمش سوري </h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">مشمش سوري الأصلي</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 870 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="مشمش سوري  " class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="مشمش سوري  " data-price="870"> إضافة للسلة 🛒 </button>
+
+      </div><!-- Yamish Product 2 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+          <img src="images (11).jpg" alt=" " >
+      </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">قمر الدين مبرومه</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">قمر الدين السوري الأصلي</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 425 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="قمر الدين مبرومه" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="قمر الدين مبرومه" data-price="425"> إضافة للسلة 🛒 </button>
+
+      </div><!-- Yamish Product 2 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+          <img src="images (57).png" alt=" " >
+      </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">قمر الدين مكعبات</h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">قمر الدين السوري الأصلي</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 425 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="قمر الدين مكعبات" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="قمر الدين مكعبات" data-price="425"> إضافة للسلة 🛒 </button>
+
+      </div><!-- Yamish Product 3 -->
+     <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+      <div class="text-6xl mb-4 text-center">
+          <img src="images (2).jpg" alt=" " >
+      </div>
+      <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">زبيب مصري </h4>
+      <p class="text-center mb-4" style="color: var(--text-gray);">زبيب  مصري فاخر</p>
+      <div class="flex items-center justify-between mb-4"><span class="text-2xl font-bold text-gold">السعر: 325 ج/كجم</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4"><label class="font-semibold" style="color: var(--text-dark);">اضف الكمية (جرام):</label> <input type="number" min="100" step="50" value="100" data-product="زبيب مصري" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+      </div><button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="زبيب مصري" data-price="325"> إضافة للسلة 🛒 </button>
+     </div>
+
+     <!-- Yamish Product 4 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (38).jpg"
+      alt="جوز هند فيتنامي ناعم"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+    جوز هند فيتنامي ناعم
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+جوز هند مبشور  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 250 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="جوز هند فيتنامي ناعم"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="جوز هند فيتنامي ناعم"
+    data-price="250"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+     <!-- Yamish Product 4 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (3).jpg"
+      alt="جوز هند اندونيسي خشن"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+    جوز هند اندونيسي خشن
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+جوز هند مبشور  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 310 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="جوز هند اندونيسي خشن"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="جوز هند اندونيسي خشن"
+    data-price="310"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+     <!-- Yamish Product 5 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (4).jpg"
+      alt=" قراصيا مخليه"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+ قراصيا مخليه  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+ قراصيا مخليه</p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 450 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product=" قراصيا مخليه"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product=" قراصيا مخليه"
+    data-price="450"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+     <!-- Yamish Product 6 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (29).jpg"
+      alt=" قراصيا بنواه"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+ قراصيا بنواه  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+ قراصيا بنواه</p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 400 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product=" قراصيا بنواه"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product=" قراصيا بنواه"
+    data-price="400"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+     <!-- Yamish Product 7 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (6).jpg"
+      alt="تين تركي"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+ تين تركي  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+  تين تركي فاخر</p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 990 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="تين تركي"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="تين تركي"
+    data-price="990"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+     <!-- Yamish Product 8 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (56).jpg"
+      alt="تين حبل"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+ تين حبل  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+  تين حبل فاخر</p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 820 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="تين حبل"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="تين حبل"
+    data-price="820"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+     <!-- Yamish Product 9 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (55).jpg"
+      alt="تين "
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+ تين تركي   </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+  تين تركي  فاخر</p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 890 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="تين تركي"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="تين تركي"
+    data-price="890"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+     <!-- Yamish Product 10 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (39).jpg"
+      alt=" تين قرص السعيد"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+ تين قرص السعيد  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+  تين السعيد300 جرام  فاخر</p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 158 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product=" تين قرص السعيد"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product=" تين قرص السعيد"
+    data-price="158"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+
+     <!-- Yamish Product 12 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (13).jpg"
+      alt="  قمر الدين الحضارة"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+  قمر الدين الحضارة  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+قمر الدين الحضارة</p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 110 ج/لفه
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف العدد (لفه):
+    </label>
+    <input
+      type="number"
+      min="1"
+      step="1"
+      value="1"
+      data-product="  قمر الدين الحضارة"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+<!-- Add to Cart Button -->
+<button
+  class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+  data-product="  قمر الدين الحضارة"
+  data-price="110"
+  data-unit="لفة"   <!-- <-- هنا أضفنا نوع الوحدة -->
+  إضافة للسلة 🛒
+</button>
+
+</div>
+
+     <!-- Yamish Product 23 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (46).jpg"
+      alt="  قمر الدين النخيل"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+  قمر الدين النخيل  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+قمر الدين النخيل</p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 140 ج/لفه
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف العدد (لفه):
+    </label>
+    <input
+      type="number"
+      min="1"
+      step="1"
+      value="1"
+      data-product="  قمر الدين النخيل"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+<!-- Add to Cart Button -->
+<button
+  class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+  data-product="  قمر الدين النخيل"
+  data-price="140"
+  data-unit="لفة"   <!-- <-- هنا أضفنا نوع الوحدة -->
+  إضافة للسلة 🛒
+</button>
+
+</div>
+
+     <!-- Yamish Product 13 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (40).jpg"
+      alt="  قمر الدين المتوكل"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+  قمر الدين المتوكل  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+قمر الدين المتوكل</p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 75 ج/لفه
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف العدد (لفه):
+    </label>
+    <input
+      type="number"
+      min="1"
+      step="1"
+      value="1"
+      data-product="  قمر الدين المتوكل"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+<!-- Add to Cart Button -->
+<button
+  class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+  data-product="  قمر الدين المتوكل"
+  data-price="75"
+  data-unit="لفة"   <!-- <-- هنا أضفنا نوع الوحدة -->
+  إضافة للسلة 🛒
+</button>
+
+</div>
+
+     <!-- Yamish Product 14 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (45).jpg"
+      alt="  قمر الدين الأحلام"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+  قمر الدين الأحلام  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+قمر الدين الأحلام</p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 125 ج/لفه
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف العدد (لفه):
+    </label>
+    <input
+      type="number"
+      min="1"
+      step="1"
+      value="1"
+      data-product="  قمر الدين الأحلام"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+<!-- Add to Cart Button -->
+<button
+  class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+  data-product="  قمر الدين الأحلام"
+  data-price="125"
+  data-unit="لفة"   <!-- <-- هنا أضفنا نوع الوحدة -->
+  إضافة للسلة 🛒
+</button>
+
+</div>
+
+     <!-- Yamish Product 24 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (47).jpg"
+      alt="  قمر الدين مكه"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+  قمر الدين مكه  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+قمر الدين مكه</p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 95 ج/لفه
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف العدد (لفه):
+    </label>
+    <input
+      type="number"
+      min="1"
+      step="1"
+      value="1"
+      data-product="  قمر الدين مكه"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+<!-- Add to Cart Button -->
+<button
+  class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+  data-product="  قمر الدين مكه"
+  data-price="95"
+  data-unit="لفة"   <!-- <-- هنا أضفنا نوع الوحدة -->
+  إضافة للسلة 🛒
+</button>
+
+</div>
+
+     <!-- Yamish Product 15 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (14).jpg"
+      alt="  زبيب اسود"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+  زبيب اسود  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+زبيب اسود</p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 240 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="  زبيب اسود"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="  زبيب اسود"
+    data-price="240"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+
+     <!-- Yamish Product 21 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (43).jpg"
+      alt="  زبيب احمر"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+  زبيب احمر  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+زبيب احمر</p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 240 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="  زبيب احمر"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="  زبيب احمر"
+    data-price="240"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+     <!-- Yamish Product 15 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (57).jpg"
+      alt="  كركدية اسواني"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+   كركدية اسواني  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+كركدية اسواني </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 360 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="  كركدية اسواني "
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="  كركدية اسواني "
+    data-price="360"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+     <!-- Yamish Product 16 -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (7).jpg"
+      alt="  عين جمل بقشرة"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+  عين جمل بقشرة  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+عين جمل بقشرة</p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 400 ج/كجم
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف الكمية (جرام):
+    </label>
+    <input
+      type="number"
+      min="100"
+      step="50"
+      value="100"
+      data-product="  عين جمل بقشرة"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="  عين جمل بقشرة"
+    data-price="400"
+  >
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+
+<!-- Yamish Product 17  تمر هندي النخيل-->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (12).jpg"
+      alt="تمر هندي النخيل"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+     تمر هندي النخيل
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+     تمر هندي النخيل
+  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 60 ج/قطعة
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف العدد (قطعة):
+    </label>
+    <input
+      type="number"
+      min="1"
+      step="1"
+      value="1"
+      data-product="تمر هندي النخيل "
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="تمر هندي النخيل "
+    data-price="60"
+    data-unit="قطعة"  <!-- <-- أضفنا الوحدة هنا -->
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+<!-- Yamish Product 26  تمر هندي الإسراء-->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (48).jpg"
+      alt="تمر هندي الإسراء"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+     تمر هندي الإسراء
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+     تمر هندي الإسراء
+  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 60 ج/قطعة
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف العدد (قطعة):
+    </label>
+    <input
+      type="number"
+      min="1"
+      step="1"
+      value="1"
+      data-product="تمر هندي الإسراء "
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="تمر هندي الإسراء "
+    data-price="60"
+    data-unit="قطعة"  <!-- <-- أضفنا الوحدة هنا -->
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+
+<!-- Yamish Product 18  تمر هندي كاندي -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (42).jpg"
+      alt=" تمر هندي كاندي"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+    تمر هندي كاندي
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+    تمر هندي كاندي جاهزة
+  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 89 ج/عبوة
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف العدد (عبوة):
+    </label>
+    <input
+      type="number"
+      min="1"
+      step="1"
+      value="1"
+      data-product="تمر هندي كاندي"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="تمر هندي كاندي"
+    data-price="89"
+    data-unit="عبوة"  <!-- <-- الوحدة محددة هنا -->
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+<!-- Yamish Product 19  سوبيا كاندي -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (41).jpg"
+      alt=" سوبيا كاندي"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+    سوبيا كاندي
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+    سوبيا كاندي جاهزة
+  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 135 ج/عبوة
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف العدد (عبوة):
+    </label>
+    <input
+      type="number"
+      min="1"
+      step="1"
+      value="1"
+      data-product="سوبيا كاندي"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="سوبيا كاندي"
+    data-price="135"
+    data-unit="عبوة"  <!-- <-- الوحدة محددة هنا -->
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+<!-- Yamish Product 20  سوبيا الرحماني -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (10).jpg"
+      alt=" سوبيا الرحماني"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+    سوبيا الرحماني
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+    سوبيا الرحماني جاهزة
+  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 88 ج/عبوة
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف العدد (عبوة):
+    </label>
+    <input
+      type="number"
+      min="1"
+      step="1"
+      value="1"
+      data-product="سوبيا الرحماني"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="سوبيا الرحماني"
+    data-price="88"
+    data-unit="عبوة"  <!-- <-- الوحدة محددة هنا -->
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+<!-- Yamish Product 25  سوبيا عمان ظرف -->
+<div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+
+  <!-- Product Image -->
+  <div class="mb-4 text-center">
+    <img
+      src="images (49).jpg"
+      alt=" سوبيا عمان ظرف"
+      class="w-32 h-32 mx-auto object-cover rounded-xl"
+    />
+  </div>
+
+  <!-- Product Name -->
+  <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">
+    سوبيا عمان ظرف
+  </h4>
+
+  <!-- Product Description -->
+  <p class="text-center mb-4" style="color: var(--text-gray);">
+    سوبيا عمان ظرف 
+  </p>
+
+  <!-- Price -->
+  <div class="flex items-center justify-between mb-4">
+    <span class="text-2xl font-bold text-gold">
+      السعر: 15 ج/ظرف
+    </span>
+  </div>
+
+  <!-- Quantity -->
+  <div class="flex items-center gap-3 mb-4">
+    <label class="font-semibold" style="color: var(--text-dark);">
+      اضف العدد (ظرف):
+    </label>
+    <input
+      type="number"
+      min="1"
+      step="1"
+      value="1"
+      data-product="سوبيا عمان ظرف"
+      class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center"
+      style="border-color: var(--gold);"
+    />
+  </div>
+
+  <!-- Add to Cart Button -->
+  <button
+    class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105"
+    data-product="سوبيا عمان ظرف"
+    data-price="15"
+    data-unit="ظرف"  <!-- <-- الوحدة محددة هنا -->
+    إضافة للسلة 🛒
+  </button>
+
+</div>
+
+
+<!--عشان الزرار يشتغل-->
+    </div>
+    <section id="Gift-section">
+  <!-- شنط وبوكسات رمضان -->
+
+<section class="max-w-7xl mx-auto mb-20 hidden">
+    <h3 class="text-3xl md:text-4xl font-black text-center mb-12" style="color: var(--text-dark);" id="category-4-title">🎁 شنط وبوكسات رمضان</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Gift Box 1 -->
+        <div class="product-card bg-white rounded-2xl p-6 shadow-lg">
+            <div class="text-6xl mb-4 text-center">
+                <img src="images ().jpg" alt=" " >
+            </div>
+            <h4 class="text-2xl font-bold mb-2 text-center" style="color: var(--text-dark);">بوكس رمضان الفاخر</h4>
+            <p class="text-center mb-4" style="color: var(--text-gray);">تشكيلة متنوعة من التمور والمكسرات</p>
+            <div class="flex items-center justify-between mb-4">
+                <span class="text-2xl font-bold text-gold">السعر: 350 ج/بوكس</span>
+            </div>
+            <div class="flex items-center gap-3 mb-4">
+                <label class="font-semibold" style="color: var(--text-dark);">العدد:</label>
+                <input type="number" min="1" value="1" data-product="بوكس رمضان الفاخر" class="quantity-input border-2 rounded-lg px-3 py-2 w-32 font-bold text-center" style="border-color: var(--gold);">
+            </div>
+            <button class="add-to-cart w-full gradient-gold text-white py-3 rounded-xl font-bold text-lg hover:shadow-xl transition transform hover:scale-105" data-product="بوكس رمضان الفاخر" data-price="350" data-unit="بوكس">إضافة للسلة 🛒</button>
+        </div>
+        <!-- بقية الصناديق مثل شنطة ياميش كبيرة و بوكس التمور الملكي بنفس الطريقة -->
+    </div>
+</section>
+  </main><!-- CTA Section -->
+  <section class="gradient-gold text-white py-16 text-center">
+   <div class="max-w-3xl mx-auto px-4">
+    <div class="text-5xl mb-6">
+      <!--من نحن-->
+     <h6>من نحن</h6>
+<p>
+نحن محمصة متخصصة في تحميص أجود أنواع المكسرات والبن  
+بأعلى جودة  .
+</p>
+
+    </div>
+   </div>
+  
+   <p style="text-align:center;opacity:0.6">
+شكراً لزيارتكم 🌰
+</p>
+
+   </section><!-- Footer -->
+  <footer class="bg-dark-gold text-white py-10" style="background-color: var(--text-dark);">
+   <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+     <div class="text-center md:text-right">
+      <h4 class="text-xl font-bold mb-4 text-gold"> </h4>
+      <p class="text-sm opacity-80"></p>
+
+<!-- Branch Location -->
+<div class="flex items-center justify-center gap-3 mt-4">
+  <div class="w-10 h-10 rounded-full flex items-center justify-center shadow-md"
+       style="background: linear-gradient(135deg, #a8872df1, #a8872df1);">
+  📍
+       </div>
+
+  <a
+    href="https://maps.app.goo.gl/okUn7kvoHEwZw9ZF6"
+    target="_blank"
+    class="font-bold text-lg hover:underline transition"
+    style="color: var(--gold);"
+  >
+  6 أكتوبر-الحصري-مول زمزم
+  </a>
+</div>
+
+     </div>
+     <div class="text-center">
+      <h4 class="text-xl font-bold mb-4 text-gold">تواصل معنا</h4>
+      <div class="flex flex-col gap-2">
+       <div class="flex items-center justify-center gap-2"><span></span> <span id="phone-1" class="font-semibold"><a href="tel:01111209349" class="call-btn">📞  01111209349</a></span>
+       </div>
+       <div class="flex items-center justify-center gap-2"><span></span> <span id="phone-2" class="font-semibold"><a href="tel:01207772789" class="call-btn">📞  01207772789</a></span>
+       </div>
+      </div>
+     </div>
+     <div class="text-center md:text-left">
+      <h4 class="text-xl font-bold mb-4 text-gold">تابعنا</h4>
+      <div class="flex justify-center md:justify-start gap-4"><a href="https://wa.me/201207772789 " id="footer-whatsapp" target="_blank" rel="noopener noreferrer" class="social-icon w-12 h-12 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700">
+        <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg></a> <a href="https://www.facebook.com/share/1akLAkHPU7/" id="footer-facebook" target="_blank" rel="noopener noreferrer" class="social-icon w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700">
+        <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        </svg></a>
+      </div>
+     </div>
+    </div>
+    <div class="border-t border-gray-600 pt-6 text-center">
+     <p class="text-sm opacity-75">© 2026 ياميش رمضان - جميع الحقوق محفوظة 🌙</p>
+    </div>
+   </div>
+  </footer><!-- Cart Modal -->
+  <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden">
+   <div class="modal-slide-in fixed top-0 left-0 h-full w-full md:w-96 bg-white shadow-2xl overflow-y-auto">
+    <div class="sticky top-0 gradient-gold text-white p-5 flex justify-between items-center z-10 shadow-lg">
+     <h3 class="text-xl font-bold">🛒 سلة المشتريات</h3><button id="close-cart" class="text-3xl hover:scale-110 transition">×</button>
+    </div>
+    <div id="cart-items" class="p-4"><!-- Cart items will be inserted here -->
+    </div>
+    <div class="sticky bottom-0 bg-white border-t-2 p-4 shadow-lg" style="border-color: var(--gold);"><button id="send-whatsapp" class="w-full bg-green-600 hover:bg-green-700 text-white py-4 rounded-xl font-bold text-lg transition transform hover:scale-105 flex items-center justify-center gap-2">
+      <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+      </svg> إرسال الطلب عبر واتساب </button>
+    </div>
+   </div>
+  </div>
+  <script>
+    const defaultConfig = {
+      site_title: 'ياميش رمضان',
+      site_subtitle: 'أجود أنواع التمور والمكسرات',
+      hero_title: 'تمور ومكسرات رمضان الفاخرة',
+      hero_subtitle: 'اكتشف أجود أنواع التمور والمكسرات المختارة بعناية لتزيين سفرة رمضان',
+      cta_button: 'اطلب الآن عبر واتساب',
+      category_1_title: 'التمور الفاخرة',
+      category_2_title: ' مكسرات محمصه',
+      category_3_title: ' مكسرات نيه',
+      category_4_title: 'الياميش ',
+      category_5_title: 'شنط وبوكسات رمضان',
+      phone_1: '01207772789',
+      phone_2: '01xxxxxxxxx',
+      whatsapp_number: '2001207772789 ',
+      facebook_link: 'https://www.facebook.com/share/1akLAkHPU7/',
+      instagram_link: 'https://instagram.com/yourpage'
+    };
+
+function scrollToTop(){
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+    let cart = [];
+
+    function updateCart() {
+      const cartCount = document.getElementById('cart-count');
+      cartCount.textContent = cart.length;
+      
+      const cartItems = document.getElementById('cart-items');
+      
+      if (cart.length === 0) {
+        cartItems.innerHTML = `
+          <div class="text-center py-16 text-gray-500">
+            <div class="text-7xl mb-4">🛒</div>
+            <p class="text-lg font-semibold">السلة فارغة</p>
+            <p class="text-sm mt-2">ابدأ بإضافة منتجات لطلبك</p>
+          </div>
+        `;
+      } else {
+        let totalPrice = 0;
+        
+        const itemsHtml = cart.map((item, index) => {
+          let itemTotal;
+          let quantityText;
+          
+          if (item.unit) {
+            itemTotal = (item.price * item.quantity).toFixed(2);
+            quantityText = `الكمية: ${item.quantity} ${item.unit}`;
+          } else {
+            itemTotal = (item.price * item.quantity / 1000).toFixed(2);
+            quantityText = `الكمية: ${item.quantity} جرام`;
+          }
+          
+          totalPrice += parseFloat(itemTotal);
+          
+return `
+  <div class="bg-white rounded-xl p-4 mb-3 shadow-md border-2" style="border-color: var(--light-gold);">
+    <div class="flex justify-between items-start mb-2">
+      <h4 class="font-bold text-lg" style="color: var(--text-dark);">${item.product}</h4>
+      <button class="remove-item text-red-600 hover:text-red-800 text-2xl font-bold transition" data-index="${index}">&times;</button>
+    </div>
+    <p class="text-lg font-bold text-gold">السعر: ${itemTotal} جنيه</p>
+<p class="text-lg font-bold text-gold"> ${quantityText}</p>
+  </div>
+`;
+        }).join('');
+        
+        cartItems.innerHTML = itemsHtml + `
+          <div class="gradient-gold text-white rounded-xl p-5 mt-4 shadow-lg">
+            <div class="flex justify-between items-center">
+              <span class="text-xl font-bold">الإجمالي:</span>
+              <span class="text-3xl font-bold">${totalPrice.toFixed(2)} ج</span>
+            </div>
+          </div>
+        `;
+        
+        document.querySelectorAll('.remove-item').forEach(btn => {
+          btn.addEventListener('click', function() {
+            const index = parseInt(this.getAttribute('data-index'));
+            cart.splice(index, 1);
+            updateCart();
+          });
+        });
+      }
+    }
+
+document.querySelectorAll('.add-to-cart').forEach(btn => {
+  btn.addEventListener('click', function () {
+
+    const product = this.getAttribute('data-product');
+    const price = parseInt(this.getAttribute('data-price'));
+    const unit = this.getAttribute('data-unit');
+
+    const quantityInput = document.querySelector(
+      `input[data-product="${product}"]`
+    );
+
+    const quantity = parseInt(quantityInput.value);
+
+    // أقل كمية 100 جرام
+    if (!unit && quantity < 100) {
+      const message = document.createElement('div');
+      message.className =
+        'fixed top-20 left-1/2 transform -translate-x-1/2 bg-red-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 text-center font-bold';
+      message.textContent = '⚠️ الحد الأدنى للطلب 100 جرام';
+      document.body.appendChild(message);
+      setTimeout(() => message.remove(), 3000);
+      return;
+    }
+
+    // لو المنتج موجود
+    let existingItem = cart.find(item => item.product === product);
+
+    if (existingItem) {
+      existingItem.quantity += quantity;
+    } else {
+      if (unit) {
+        cart.push({ product, quantity, price, unit });
+      } else {
+        cart.push({ product, quantity, price });
+      }
+    }
+
+    updateCart();
+
+    const success = document.createElement('div');
+    success.className =
+      'fixed top-20 left-1/2 transform -translate-x-1/2 text-white px-6 py-3 rounded-lg shadow-lg z-50 text-center font-bold gradient-gold';
+    success.textContent = '✓ تمت الإضافة للسلة';
+    document.body.appendChild(success);
+    setTimeout(() => success.remove(), 2000);
+  });
+});
+
+
+    document.getElementById('cart-btn').addEventListener('click', () => {
+      document.getElementById('cart-modal').classList.remove('hidden');
+    });
+
+    document.getElementById('close-cart').addEventListener('click', () => {
+      document.getElementById('cart-modal').classList.add('hidden');
+    });
+
+    document.getElementById('cart-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'cart-modal') {
+        document.getElementById('cart-modal').classList.add('hidden');
+      }
+    });
+
+    function sendWhatsAppOrder() {
+      if (cart.length === 0) {
+        const message = document.createElement('div');
+        message.className = 'fixed top-20 left-1/2 transform -translate-x-1/2 bg-red-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 text-center font-bold';
+        message.textContent = '⚠️ السلة فارغة! أضف منتجات أولاً';
+        document.body.appendChild(message);
+        setTimeout(() => message.remove(), 3000);
+        return;
+      }
+
+      const config = window.elementSdk?.config || defaultConfig;
+      const whatsappNumber = config.whatsapp_number || defaultConfig.whatsapp_number;
+      
+      let message = '🌙 *طلب جديد من محمصه رياحين* 🌙\n\n';
+      let totalPrice = 0;
+      
+      cart.forEach((item, index) => {
+        let itemTotal;
+        let quantityText;
+        
+        if (item.unit) {
+          itemTotal = (item.price * item.quantity);
+          quantityText = `${item.quantity} ${item.unit}`;
+        } else {
+          itemTotal = (item.price * item.quantity / 1000);
+          quantityText = `${item.quantity} جرام`;
+        }
+        
+        totalPrice += itemTotal;
+        message += `${index + 1}. *${item.product}*\n`;
+        message += `   📦 الكمية: ${quantityText}\n`;
+        message += `   💰 السعر: ${itemTotal.toFixed(2)} جنيه\n\n`;
+      });
+      
+      message += `━━━━━━━━━━━━━━━━━\n`;
+      message += `💵 *الإجمالي: ${totalPrice.toFixed(2)} جنيه*\n\n`;
+      message += 'شكراً لكم وكل عام وأنتم بخير! 🌙✨';
+      
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/${2001207772789}?text=${encodedMessage}`;
+      
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    }
+
+    document.getElementById('send-whatsapp').addEventListener('click', sendWhatsAppOrder);
+    document.getElementById('cta-whatsapp').addEventListener('click', () => {
+      const config = window.elementSdk?.config || defaultConfig;
+      const whatsappNumber = config.whatsapp_number || defaultConfig.whatsapp_number;
+      const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    });
+
+    async function onConfigChange(config) {
+      document.getElementById('site-title').textContent = config.site_title || defaultConfig.site_title;
+      document.getElementById('site-subtitle').textContent = config.site_subtitle || defaultConfig.site_subtitle;
+      document.getElementById('hero-title').textContent = config.hero_title || defaultConfig.hero_title;
+      document.getElementById('hero-subtitle').textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+      document.getElementById('category-1-title').textContent = config.category_1_title || defaultConfig.category_1_title;
+      document.getElementById('category-2-title').textContent = config.category_2_title || defaultConfig.category_2_title;
+      document.getElementById('category-3-title').textContent = config.category_3_title || defaultConfig.category_3_title;
+      document.getElementById('category-4-title').textContent = config.category_4_title || defaultConfig.category_4_title;
+      document.getElementById('phone-1').textContent = config.phone_1 || defaultConfig.phone_1;
+      document.getElementById('phone-2').textContent = config.phone_2 || defaultConfig.phone_2;
+      
+      const whatsappLink = `https://wa.me/${config.whatsapp_number || defaultConfig.whatsapp_number}`;
+      document.getElementById('footer-whatsapp').href = whatsappLink;
+      document.getElementById('footer-facebook').href = config.facebook_link || defaultConfig.facebook_link;
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities: () => ({
+          recolorables: [],
+          borderables: [],
+          fontEditable: undefined,
+          fontSizeable: undefined
+        }),
+        mapToEditPanelValues: (config) => new Map([
+          ['site_title', config.site_title || defaultConfig.site_title],
+          ['site_subtitle', config.site_subtitle || defaultConfig.site_subtitle],
+          ['hero_title', config.hero_title || defaultConfig.hero_title],
+          ['hero_subtitle', config.hero_subtitle || defaultConfig.hero_subtitle],
+          ['cta_button', config.cta_button || defaultConfig.cta_button],
+          ['category_1_title', config.category_1_title || defaultConfig.category_1_title],
+          ['category_2_title', config.category_2_title || defaultConfig.category_2_title],
+          ['category_3_title', config.category_3_title || defaultConfig.category_3_title],
+          ['category_4_title', config.category_4_title || defaultConfig.category_4_title],
+          ['phone_1', config.phone_1 || defaultConfig.phone_1],
+          ['phone_2', config.phone_2 || defaultConfig.phone_2],
+          ['whatsapp_number', config.whatsapp_number || defaultConfig.whatsapp_number],
+          ['facebook_link', config.facebook_link || defaultConfig.facebook_link]
+        ])
+      });
+    }
+
+    updateCart();
+
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9bf0a52f4575e179',t:'MTc2ODU5ODMwNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ </html>
