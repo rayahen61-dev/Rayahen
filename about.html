@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>من نحن - محمصة رياحين</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+body {
+  box-sizing: border-box;
+  font-family: 'Cairo', 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
+
+:root {
+  --gold: #6e5500;
+  --dark-gold: #685000;
+  --light-gold: #f0e5c5;
+  --dark-brown: #3e2723;
+  --medium-brown: #6d4c41;
+  --light-brown: #a1887f;
+  --cream: #fdf6e3;
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--dark-gold) 100%);
+}
+
+.gradient-brown {
+  background: linear-gradient(135deg, var(--dark-brown) 0%, var(--medium-brown) 100%);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, rgba(167, 128, 1, 0.95) 0%, rgba(197, 151, 0, 0.95) 100%),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="coffee" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="2" fill="rgba(62,39,35,0.1)"/></pattern></defs><rect fill="url(%23coffee)" width="1200" height="600"/></svg>');
+  background-size: cover;
+  background-position: center;
+}
+
+.value-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fdf6e3 100%);
+  border: 3px solid var(--light-gold);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.value-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.3);
+  border-color: var(--gold);
+}
+
+.icon-circle {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--dark-gold) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  font-size: 3rem;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover .icon-circle {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.story-section {
+  background: linear-gradient(to bottom, #ffffff 0%, var(--cream) 100%);
+}
+
+.section-divider {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold) 0%, var(--dark-gold) 100%);
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+.contact-btn {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
+}
+
+.phone-btn {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--dark-gold) 100%);
+  transition: all 0.3s ease;
+}
+
+.phone-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+.decorative-pattern {
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(184, 148, 31, 0.08) 0%, transparent 50%);
+}
+</style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full bg-white">
+  <div class="w-full h-full overflow-auto"><!-- Hero Section -->
+   <section class="hero-section py-24 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+     <div class="floating mb-6">
+      <div class="text-8xl mb-4">
+       ☕
+      </div>
+     </div>
+     <h1 id="page-title" class="text-5xl md:text-6xl font-black text-white mb-6 drop-shadow-lg">من نحن</h1>
+     <div class="section-divider bg-white"></div>
+    </div>
+   </section><!-- Story Section -->
+   <section class="story-section py-20 px-4 decorative-pattern">
+    <div class="max-w-5xl mx-auto">
+     <div class="text-center mb-12">
+      <h2 id="story-title" class="text-4xl md:text-5xl font-black mb-4" style="color: var(--dark-brown);">🌙 رحلتنا</h2>
+      <div class="section-divider"></div>
+     </div>
+     <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border-4" style="border-color: var(--light-gold);">
+      <p id="story-text" class="text-xl md:text-2xl leading-relaxed text-gray-700 text-center font-semibold">بدأت محمصة رياحين من حلم بسيط: تقديم أفضل أنواع القهوة والمكسرات بجودة استثنائية وأسعار عادلة. منذ تأسيسنا، حرصنا على انتقاء أجود أنواع البن من أفضل المزارع حول العالم، وتحميصه بعناية فائقة للحفاظ على نكهته الأصيلة. نحن لسنا مجرد محمصة، بل عائلة تجمعنا قصة حب للقهوة وشغف بإسعاد عملائنا الكرام.</p>
+      <div class="mt-10 grid md:grid-cols-3 gap-6 text-center">
+       </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Values Section -->
+   <section class="py-20 px-4 bg-gradient-to-b from-white to-gray-50">
+    <div class="max-w-6xl mx-auto">
+     <div class="text-center mb-16">
+      <h2 id="values-title" class="text-4xl md:text-5xl font-black mb-4" style="color: var(--dark-brown);">✨ قيمنا ومبادئنا</h2>
+      <div class="section-divider"></div>
+      <p class="text-xl text-gray-600 mt-6 font-semibold">المبادئ التي نؤمن بها ونعمل من خلالها</p>
+     </div>
+     <div class="grid md:grid-cols-3 gap-8"><!-- Value 1 -->
+      <div class="value-card rounded-3xl p-8 text-center">
+       <div class="icon-circle"><span>⭐</span>
+       </div>
+       <h3 id="value-1-title" class="text-2xl font-black mb-4" style="color: var(--dark-brown);">الجودة أولاً</h3>
+       <p id="value-1-desc" class="text-lg text-gray-700 leading-relaxed font-semibold">نختار أفضل أنواع البن والمكسرات من مصادر موثوقة، ونحرص على تحميصها بأعلى معايير الجودة</p>
+      </div><!-- Value 2 -->
+      <div class="value-card rounded-3xl p-8 text-center">
+       <div class="icon-circle"><span>🏆</span>
+       </div>
+       <h3 id="value-2-title" class="text-2xl font-black mb-4" style="color: var(--dark-brown);">الأصالة</h3>
+       <p id="value-2-desc" class="text-lg text-gray-700 leading-relaxed font-semibold">نحافظ على الطرق التقليدية في التحميص مع الاستفادة من التقنيات الحديثة للوصول لأفضل نكهة</p>
+      </div><!-- Value 3 -->
+      <div class="value-card rounded-3xl p-8 text-center">
+       <div class="icon-circle"><span>💚</span>
+       </div>
+       <h3 id="value-3-title" class="text-2xl font-black mb-4" style="color: var(--dark-brown);">رضا العميل</h3>
+       <p id="value-3-desc" class="text-lg text-gray-700 leading-relaxed font-semibold">سعادتكم هي هدفنا الأول، لذلك نقدم خدمة عملاء مميزة ونستمع لآرائكم ومقترحاتكم باهتمام</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section class="gradient-brown py-20 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+     <div class="text-6xl mb-6 floating">
+      📱
+     </div>
+     <h2 id="contact-title" class="text-4xl md:text-5xl font-black text-white mb-6">تواصل معنا</h2>
+     <div class="section-divider bg-white"></div>
+     <p class="text-xl text-white mt-6 mb-10 font-semibold">نحن هنا للإجابة على استفساراتكم وخدمتكم في أي وقت</p>
+     <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto"><a href="https://wa.me/201207772789" id="whatsapp-link" target="_blank" rel="noopener noreferrer" class="contact-btn py-6 px-8 rounded-2xl text-white font-black text-xl flex items-center justify-center gap-3 shadow-xl"> <span class="text-3xl">📱</span> <span>واتساب</span> </a> <a href="tel:01111209349" id="phone-link" class="phone-btn py-6 px-8 rounded-2xl text-white font-black text-xl flex items-center justify-center gap-3 shadow-xl"> <span class="text-3xl">📞</span> <span id="phone-display">اتصل بنا</span> </a>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="bg-gray-900 text-white py-8 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+     <div class="text-5xl mb-4">
+      ☕
+     </div>
+     <p class="text-xl font-bold mb-2">محمصة رياحين</p>
+     <p class="text-gray-400 font-semibold">جودة استثنائية في كل كوب</p>
+     <div class="mt-6 text-sm text-gray-500">
+      © 2026 محمصة رياحين. جميع الحقوق محفوظة.
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script>
+    const defaultConfig = {
+      page_title: "من نحن",
+      hero_subtitle: "قصة شغف بدأت من حب القهوة",
+      story_title: "🌙 قصتنا",
+      story_text: "بدأت محمصة رياحين من حلم بسيط: تقديم أفضل أنواع القهوة والمكسرات بجودة استثنائية وأسعار عادلة. منذ تأسيسنا، حرصنا على انتقاء أجود أنواع البن من أفضل المزارع حول العالم، وتحميصه بعناية فائقة للحفاظ على نكهته الأصيلة. نحن لسنا مجرد محمصة، بل عائلة تجمعنا قصة حب للقهوة وشغف بإسعاد عملائنا الكرام.",
+      values_title: "✨ قيمنا ومبادئنا",
+      value_1_title: "الجودة أولاً",
+      value_1_desc: "نختار أفضل أنواع البن والمكسرات من مصادر موثوقة، ونحرص على تحميصها بأعلى معايير الجودة",
+      value_2_title: "الأصالة",
+      value_2_desc: "نحافظ على الطرق التقليدية في التحميص مع الاستفادة من التقنيات الحديثة للوصول لأفضل نكهة",
+      value_3_title: "رضا العميل",
+      value_3_desc: "سعادتكم هي هدفنا الأول، لذلك نقدم خدمة عملاء مميزة ونستمع لآرائكم ومقترحاتكم باهتمام",
+      contact_title: "تواصل معنا",
+      phone_number: "01207772789",
+      whatsapp_number: "201207772789"
+    };
+
+    async function onConfigChange(config) {
+      document.getElementById('page-title').textContent = config.page_title || defaultConfig.page_title;
+      document.getElementById('hero-subtitle').textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+      document.getElementById('story-title').textContent = config.story_title || defaultConfig.story_title;
+      document.getElementById('story-text').textContent = config.story_text || defaultConfig.story_text;
+      document.getElementById('values-title').textContent = config.values_title || defaultConfig.values_title;
+      document.getElementById('value-1-title').textContent = config.value_1_title || defaultConfig.value_1_title;
+      document.getElementById('value-1-desc').textContent = config.value_1_desc || defaultConfig.value_1_desc;
+      document.getElementById('value-2-title').textContent = config.value_2_title || defaultConfig.value_2_title;
+      document.getElementById('value-2-desc').textContent = config.value_2_desc || defaultConfig.value_2_desc;
+      document.getElementById('value-3-title').textContent = config.value_3_title || defaultConfig.value_3_title;
+      document.getElementById('value-3-desc').textContent = config.value_3_desc || defaultConfig.value_3_desc;
+      document.getElementById('contact-title').textContent = config.contact_title || defaultConfig.contact_title;
+      
+      const phoneNumber = config.phone_number || defaultConfig.phone_number;
+      const whatsappNumber = config.whatsapp_number || defaultConfig.whatsapp_number;
+      
+      document.getElementById('phone-display').textContent = phoneNumber;
+      document.getElementById('phone-link').href = `tel:${phoneNumber}`;
+      document.getElementById('whatsapp-link').href = `https://wa.me/${whatsappNumber}`;
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities: () => ({
+          recolorables: [],
+          borderables: [],
+          fontEditable: undefined,
+          fontSizeable: undefined
+        }),
+        mapToEditPanelValues: (config) => new Map([
+          ["page_title", config.page_title || defaultConfig.page_title],
+          ["hero_subtitle", config.hero_subtitle || defaultConfig.hero_subtitle],
+          ["story_title", config.story_title || defaultConfig.story_title],
+          ["story_text", config.story_text || defaultConfig.story_text],
+          ["values_title", config.values_title || defaultConfig.values_title],
+          ["value_1_title", config.value_1_title || defaultConfig.value_1_title],
+          ["value_1_desc", config.value_1_desc || defaultConfig.value_1_desc],
+          ["value_2_title", config.value_2_title || defaultConfig.value_2_title],
+          ["value_2_desc", config.value_2_desc || defaultConfig.value_2_desc],
+          ["value_3_title", config.value_3_title || defaultConfig.value_3_title],
+          ["value_3_desc", config.value_3_desc || defaultConfig.value_3_desc],
+          ["contact_title", config.contact_title || defaultConfig.contact_title],
+          ["phone_number", config.phone_number || defaultConfig.phone_number],
+          ["whatsapp_number", config.whatsapp_number || defaultConfig.whatsapp_number]
+        ])
+      });
+    } else {
+      onConfigChange(defaultConfig);
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c5c0b4a83ea32f7',t:'MTc2OTcyNDQ2My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

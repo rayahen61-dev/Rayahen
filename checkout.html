@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إتمام الطلب - محمصة رياحين</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+body {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.section-title {
+  background: linear-gradient(135deg, rgba(102,126,234,0.15) 0%, rgba(118,75,162,0.15) 100%);
+  border-right: 4px solid #667eea;
+}
+
+.payment-btn {
+  transition: all 0.3s ease;
+}
+
+.payment-btn:hover {
+  transform: translateY(-2px);
+}
+
+.payment-btn.active {
+  border-color: #10b981 !important;
+  background: #f0fdf4 !important;
+  box-shadow: 0 0 0 4px rgba(16,185,129,0.2);
+}
+
+.payment-btn.instapay {
+  background: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.payment-btn.instapay.active {
+  border-color: #6a1b9a !important;
+  background: #f3e5f5 !important;
+  box-shadow: 0 0 0 4px rgba(106,27,154,0.2);
+}
+
+.instapay-badge {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 7px;
+  background: #6a1b9a;
+  color: #fff;
+  font-weight: 900;
+  margin-left: 6px;
+  font-size: 13px;
+}
+
+.upload-zone {
+  border: 3px dashed #cbd5e1;
+  transition: all 0.3s ease;
+  background: #f8fafc;
+}
+
+.upload-zone:hover {
+  border-color: #6a1b9a;
+  background: #f3e5f5;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
+}
+
+input.error, select.error {
+  border-color: #e53e3e !important;
+  background: #fff5f5 !important;
+}
+
+.summary-gradient {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.toast {
+  animation: slideDown 0.3s ease;
+}
+</style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full gradient-bg">
+  <div class="w-full h-full overflow-auto py-8 px-4">
+   <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl p-8">
+    <h2 class="text-3xl font-bold text-center mb-8 text-purple-700 border-b-4 border-purple-500 pb-4">🌙 إتمام الطلب - محمصة رياحين 🌙</h2><!-- البيانات الشخصية -->
+    <div class="section-title rounded-xl p-3 mb-4">
+     <h3 class="text-xl font-bold text-gray-800">👤 البيانات الشخصية</h3>
+    </div>
+    <div class="grid md:grid-cols-2 gap-4 mb-6">
+     <div><label class="block text-gray-700 font-semibold mb-2"> الاسم <span class="text-red-600">*</span> </label> <input type="text" id="name" class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-gray-50 transition-all" placeholder="أدخل الاسم الكامل">
+     </div>
+     <div><label class="block text-gray-700 font-semibold mb-2"> رقم الهاتف <span class="text-red-600">*</span> </label> <input type="tel" id="phone" inputmode="numeric" class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-gray-50 transition-all" placeholder="01xxxxxxxxx">
+     </div>
+    </div><!-- بيانات العقار -->
+    <div class="section-title rounded-xl p-3 mb-4 mt-8">
+     <h3 class="text-xl font-bold text-gray-800">🏠 بيانات العقار</h3>
+    </div>
+    <div class="grid md:grid-cols-2 gap-4 mb-4">
+     <div><label class="block text-gray-700 font-semibold mb-2">نوع العقار</label> <select id="propertyType" class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-gray-50 transition-all"> <option value="">-- اختر نوع العقار --</option> <option value="شقة">شقة</option> <option value="فيلا">فيلا</option> <option value="مكتب">مكتب</option> <option value="محل">محل</option> </select>
+     </div>
+     <div><label class="block text-gray-700 font-semibold mb-2">الحي</label> <input type="text" id="neighborhood" class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-gray-50 transition-all" placeholder="مثال: حي النزهة">
+     </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-4 mb-4">
+     <div><label class="block text-gray-700 font-semibold mb-2">المنطقة</label> <input type="text" id="area" class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-gray-50 transition-all" placeholder="مثال: مدينة نصر">
+     </div>
+     <div><label class="block text-gray-700 font-semibold mb-2">اسم الشارع</label> <input type="text" id="streetName" class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-gray-50 transition-all" placeholder="مثال: شارع الطيران">
+     </div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-4 mb-6">
+     <div><label class="block text-gray-700 font-semibold mb-2">رقم المبنى</label> <input type="text" id="buildingNumber" class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-gray-50 transition-all" placeholder="مثال: 15">
+     </div>
+     <div><label class="block text-gray-700 font-semibold mb-2">الدور</label> <input type="text" id="floor" class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-gray-50 transition-all" placeholder="الدور الثالث">
+     </div>
+     <div><label class="block text-gray-700 font-semibold mb-2">رقم الشقة</label> <input type="text" id="apartmentNumber" class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl bg-gray-50 transition-all" placeholder="5">
+     </div>
+    </div><!-- طريقة الدفع -->
+    <div class="section-title rounded-xl p-3 mb-4 mt-8">
+     <h3 class="text-xl font-bold text-gray-800">💳 طريقة الدفع <span class="text-red-600">*</span></h3>
+    </div>
+    <div class="grid grid-cols-2 gap-4 mb-4">
+     <div class="payment-btn border-3 border-gray-300 rounded-xl p-4 text-center cursor-pointer font-bold bg-gray-50" onclick="selectPayment('كاش', this)" id="cashOption">
+      <div class="text-4xl mb-2">
+       💵
+      </div>
+      <div class="text-lg">
+       كاش
+      </div>
+     </div>
+     <div class="payment-btn instapay border-3 border-gray-300 rounded-xl p-4 text-center cursor-pointer font-bold" onclick="selectPayment('Instapay', this)" id="instapayOption">
+      <div class="mb-2"><span class="instapay-badge">in</span>
+      </div>
+      <div class="text-lg font-bold">
+       Instapay
+      </div>
+     </div>
+    </div><!-- رسالة Instapay -->
+    <div id="instaNote" class="hidden mt-4 p-4 bg-red-50 border-r-4 border-red-600 rounded-xl">
+     <p class="text-red-800 font-semibold">📸 برجاء إرسال صورة إيصال الدفع</p>
+    </div><!-- منطقة رفع الصورة -->
+    <div id="uploadSection" class="hidden mt-4">
+     <div class="upload-zone rounded-xl p-6 text-center cursor-pointer" id="uploadZone"><input type="file" id="paymentProof" accept="image/*" class="hidden">
+      <div id="uploadPrompt">
+       <div class="text-5xl mb-3">
+        📁
+       </div>
+       <p class="text-purple-700 font-semibold text-lg">اضغط لتحميل صورة الإيصال</p>
+       <p class="text-gray-500 text-sm mt-2">PNG, JPG, JPEG (Max 5MB)</p>
+      </div>
+      <div id="filePreview" class="hidden"><img id="previewImage" class="mx-auto rounded-xl max-h-64 mb-3 border-2 border-purple-300" alt="معاينة الصورة">
+       <p id="fileName" class="text-green-600 font-semibold mb-3"></p><button type="button" onclick="removeFile()" class="px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors font-bold"> 🗑️ إزالة الصورة </button>
+      </div>
+     </div>
+    </div><!-- ملخص الطلب -->
+    <div class="summary-gradient border-2 border-green-500 rounded-2xl p-6 mt-8">
+     <h3 class="text-xl font-bold text-green-800 mb-4">📦 ملخص الطلب:</h3>
+     <div id="orderSummary" class="space-y-2 mb-4"><!-- سيتم ملؤها بالجافاسكربت -->
+     </div>
+     <div class="border-t-2 border-green-300 pt-4 mt-4">
+      <div class="flex justify-between items-center"><span class="text-2xl font-bold text-green-800">الإجمالي:</span> <span class="text-3xl font-bold text-green-600"> <span id="totalPrice">0</span> جنيه </span>
+      </div>
+     </div>
+    </div><!-- زر الإرسال --> <button onclick="sendOrder()" class="w-full mt-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white text-xl font-bold rounded-xl hover:from-green-600 hover:to-green-700 transition-all transform hover:scale-105 shadow-lg"> 📱 إرسال الطلب عبر واتساب </button>
+   </div>
+  </div>
+  <script>
+    /* ===== قراءة السلة من localStorage ===== */
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let total = 0;
+    const orderSummary = document.getElementById("orderSummary");
+
+    if (cart.length === 0) {
+      orderSummary.innerHTML = `
+        <div class="text-center py-8 text-gray-400">
+          <div class="text-6xl mb-3">🛒</div>
+          <p class="text-lg font-semibold">السلة فارغة</p>
+          <p class="text-sm mt-2">ابدأ بإضافة منتجات لطلبك</p>
+        </div>
+      `;
+    } else {
+      cart.forEach(item => {
+        let itemTotal;
+        let quantityText;
+        
+        if (item.unit) {
+          itemTotal = (item.price * item.quantity).toFixed(2);
+          quantityText = `${item.quantity} ${item.unit}`;
+        } else {
+          itemTotal = ((item.price * item.quantity) / 1000).toFixed(2);
+          quantityText = `${item.quantity} جرام`;
+        }
+        
+        total += parseFloat(itemTotal);
+        
+        orderSummary.innerHTML += `
+          <div class="flex justify-between items-center py-2 border-b border-green-200">
+            <div>
+              <span class="font-semibold text-gray-800">${item.product}</span>
+              <span class="text-sm text-gray-600 mr-2">× ${quantityText}</span>
+            </div>
+            <span class="font-bold text-green-700">${itemTotal} ج</span>
+          </div>
+        `;
+      });
+    }
+
+    document.getElementById("totalPrice").textContent = total.toFixed(2);
+
+    /* ===== اختيار طريقة الدفع ===== */
+    let paymentMethod = "";
+    let uploadedFile = null;
+
+    function selectPayment(method, element) {
+      paymentMethod = method;
+      
+      document.querySelectorAll('.payment-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      element.classList.add('active');
+      
+      const instaNote = document.getElementById("instaNote");
+      const uploadSection = document.getElementById("uploadSection");
+      
+      if (method === "Instapay") {
+        instaNote.classList.remove("hidden");
+        uploadSection.classList.remove("hidden");
+      } else {
+        instaNote.classList.add("hidden");
+        uploadSection.classList.add("hidden");
+      }
+    }
+
+    /* ===== رفع الصورة ===== */
+    document.getElementById("uploadZone").addEventListener("click", function() {
+      document.getElementById("paymentProof").click();
+    });
+
+    document.getElementById("paymentProof").addEventListener("change", function(e) {
+      const file = e.target.files[0];
+      if (file) {
+        uploadedFile = file;
+        const reader = new FileReader();
+        
+        reader.onload = function(e) {
+          document.getElementById("uploadPrompt").classList.add("hidden");
+          document.getElementById("filePreview").classList.remove("hidden");
+          document.getElementById("previewImage").src = e.target.result;
+          document.getElementById("fileName").textContent = file.name;
+        };
+        
+        reader.readAsDataURL(file);
+      }
+    });
+
+    function removeFile() {
+      uploadedFile = null;
+      document.getElementById("paymentProof").value = "";
+      document.getElementById("uploadPrompt").classList.remove("hidden");
+      document.getElementById("filePreview").classList.add("hidden");
+    }
+
+    /* ===== إرسال الطلب ===== */
+    function sendOrder() {
+      const nameInput = document.getElementById("name");
+      const phoneInput = document.getElementById("phone");
+      
+      nameInput.classList.remove("error");
+      phoneInput.classList.remove("error");
+      
+      // التحقق من السلة
+      if (cart.length === 0) {
+        showToast("⚠️ السلة فارغة! أضف منتجات أولاً", "error");
+        return;
+      }
+
+      // التحقق من الاسم
+      if (!nameInput.value.trim()) {
+        nameInput.classList.add("error");
+        showToast("⚠️ من فضلك اكتب الاسم", "error");
+        nameInput.focus();
+        return;
+      }
+
+      // التحقق من الهاتف
+      if (!/^(010|011|012|015)\d{8}$/.test(phoneInput.value.trim())) {
+        phoneInput.classList.add("error");
+        showToast("⚠️ برجاء إدخال رقم هاتف صحيح (11 رقم يبدأ بـ 010/011/012/015)", "error");
+        phoneInput.focus();
+        return;
+      }
+
+      // التحقق من طريقة الدفع
+      if (!paymentMethod) {
+        showToast("⚠️ اختر طريقة الدفع", "error");
+        return;
+      }
+
+      // بناء الرسالة
+      let message = `🌙 *طلب جديد من محمصة رياحين* 🌙\n\n`;
+      
+      // البيانات الشخصية
+      message += `*👤 البيانات الشخصية:*\n`;
+      message += `الاسم: ${nameInput.value.trim()}\n`;
+      message += `📞 الهاتف: ${phoneInput.value.trim()}\n\n`;
+      
+      // بيانات العقار
+      const propertyType = document.getElementById("propertyType").value;
+      const neighborhood = document.getElementById("neighborhood").value.trim();
+      const area = document.getElementById("area").value.trim();
+      const streetName = document.getElementById("streetName").value.trim();
+      const buildingNumber = document.getElementById("buildingNumber").value.trim();
+      const floor = document.getElementById("floor").value.trim();
+      const apartmentNumber = document.getElementById("apartmentNumber").value.trim();
+      
+      if (propertyType || neighborhood || area || streetName || buildingNumber || floor || apartmentNumber) {
+        message += `*🏠 بيانات العقار:*\n`;
+        if (propertyType) message += `نوع العقار: ${propertyType}\n`;
+        if (neighborhood) message += `الحي: ${neighborhood}\n`;
+        if (area) message += `المنطقة: ${area}\n`;
+        if (streetName) message += `الشارع: ${streetName}\n`;
+        if (buildingNumber) message += `رقم المبنى: ${buildingNumber}\n`;
+        if (floor) message += `الدور: ${floor}\n`;
+        if (apartmentNumber) message += `رقم الشقة: ${apartmentNumber}\n`;
+        message += `\n`;
+      }
+      
+      // تفاصيل الطلب
+      message += `*📦 تفاصيل الطلب:*\n`;
+      message += `━━━━━━━━━━━━━━━\n\n`;
+      
+      cart.forEach((item, index) => {
+        let itemTotal;
+        let quantityText;
+        
+        if (item.unit) {
+          itemTotal = (item.price * item.quantity).toFixed(2);
+          quantityText = `${item.quantity} ${item.unit}`;
+        } else {
+          itemTotal = ((item.price * item.quantity) / 1000).toFixed(2);
+          quantityText = `${item.quantity} جرام`;
+        }
+        
+        message += `*${index + 1}. ${item.product}*\n`;
+        message += `   📦 الكمية: ${quantityText}\n`;
+        message += `   💰 السعر: ${itemTotal} جنيه\n\n`;
+      });
+      
+      message += `━━━━━━━━━━━━━━━\n`;
+      message += `💵 *الإجمالي: ${total.toFixed(2)} جنيه*\n\n`;
+      
+      // طريقة الدفع
+      message += `*💳 طريقة الدفع:*\n`;
+      message += paymentMethod === "كاش" ? "💵 كاش" : "💳 Instapay";
+      if (paymentMethod === "Instapay" && uploadedFile) {
+        message += " ✅ (تم إرفاق إيصال الدفع)";
+      }
+      message += `\n\n`;
+      message += `شكراً لكم وكل عام وأنتم بخير! 🌙✨`;
+
+      // إرسال للواتساب
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/201207772789?text=${encodedMessage}`;
+      
+      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    }
+
+    /* ===== Toast Messages ===== */
+    function showToast(message, type = "success") {
+      const toast = document.createElement("div");
+      toast.className = `toast fixed top-5 left-1/2 -translate-x-1/2 px-6 py-4 rounded-xl font-bold text-white shadow-2xl z-50 ${type === "error" ? "bg-red-600" : "bg-green-600"}`;
+      toast.textContent = message;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.remove(), 3000);
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c5bc224239932f7',t:'MTc2OTcyMTQ2Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
